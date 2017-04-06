@@ -1,4 +1,9 @@
 @font-face {
+    font-family: MyriadProBold;
+    src: url(../fonts/MyriadPro-BoldCond.otf);
+}
+
+@font-face {
     font-family: MyriadPro;
     src: url(../fonts/MyriadPro-Cond.otf);
 }
@@ -11,7 +16,7 @@
 }
 
 body {
-    font-family: MyriadPro, 'Arial', sans-serif;
+    font-family: MyriadProBold, 'Arial', sans-serif;
 }
 
 .wrapper {
@@ -33,12 +38,18 @@ body {
 }
 
 .red-text {
-    color: red;
+    color: #FF0000;
+}
+
+.grey-text {
+    color: #646363;
 }
 
 /*general styles end*/
 
 /*header styles start*/
+
+/*navigation styles start*/
 
 .navigation {
     position: fixed;
@@ -49,14 +60,17 @@ body {
     background-color: rgba(82, 76, 68, 0.5);
     color: #FFFFFF;
     font-size: 24px;
-    font-weight: bold;
 }
 
 .navigation__item {
     display: inline-block;
     padding: 10px;
-    margin-right: 50px;
+    margin-right: 34px;
 }
+
+/*navigation styles end*/
+
+/*introduction info styles start*/
 
 .introduction-info {
     height: 640px;
@@ -68,6 +82,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/*logo-phone section styles start*/
 
 .logo-phone {
     padding-top: 60px;
@@ -82,29 +98,57 @@ body {
 .logo__text_style_direct {
     font-size: 42px;
     line-height: 56px;
-    font-weight: bold;
     border-bottom: 2px solid #FFFFFF;
 }
 
 .logo__tagline_style_direct {
-    font-size: 27px;
+    font-family: MyriadPro;
+    font-size: 25px;
     line-height: 40px
 }
 
-.phone-order_style_direct {
-    font-weight: bold;
-}
-
 .phone-order__number_style_direct {
-    font-size: 52px;
+    font-size: 48px;
     line-height: 70px
 }
 
 .phone-order__order-button_style_direct {
     width: 100%;
-    padding: 8px;
+    padding: 5px;
     text-align: center;
     font-size: 25px;
     background-image:linear-gradient(#fefefe 55%, #efefef);
     border: none;
 }
+
+/*logo-phone section styles end*/
+
+/*main title stlyes start*/
+
+.main-title_style_direct {
+    font-size: 32px;
+    padding-top: 56px;
+}
+
+.main-title__text,
+.arrow-continer {
+    text-align: center;
+}
+
+.arrow-continer {
+    display: inline-block;
+    width: 210px;
+    background-image: url(../img/arrow-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.arrow-text {
+    position: relative;
+    left: -5px;
+}
+
+/*main title stlyes end*/
+
+/*introduction info styles end*/
