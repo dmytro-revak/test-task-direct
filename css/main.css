@@ -1,0 +1,55 @@
+@font-face {
+    font-family: MyriadPro;
+    src: url(../fonts/MyriadPro-Cond.otf);
+}
+
+/*general styles start*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: MyriadPro, 'Arial', sans-serif;
+}
+
+.wrapper {
+    width: 1033px;
+    margin: 0 auto;
+}
+
+.page-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*general styles end*/
+
+.navigation {
+    position: fixed;
+    width: 100%;
+}
+
+.navigation_style_direct {
+    background-color: rgba(82, 76, 68, 0.5);
+    color: #FFFFFF;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.navigation__item {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.introduction-info {
+    height: 300px;
+}
+
+.introduction-info_style_direct {
+    background-image: url("../img/header-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
